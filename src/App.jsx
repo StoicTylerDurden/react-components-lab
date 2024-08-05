@@ -45,12 +45,12 @@ const App = () => {
   <>
     <h1>Local Weather</h1>
     <section>
-    <ul>
-      {weatherForecasts.map((weather) => (
-          <WeatherForecast key={weather.id} weather={weather} />
+    
+      {weatherForecasts.map((weather,index) => (
+          <WeatherForecast key={index} weather={weather} />
         ))}
         
-    </ul>
+    
         </section>
   </>
   );
